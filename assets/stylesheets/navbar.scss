@@ -1,0 +1,58 @@
+
+.navbar {
+  height: $navbar-height;
+  color: $navbar-font-color;
+  font: $navbar-font;
+  background: $navbar-background;
+
+  a {
+    color: $navbar-menu-color;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.navbar-inverse {
+  color: invert($navbar-font-color);
+  background: invert($navbar-background);
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-header {
+  float: left;
+  padding: 14px;
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+
+.nav {
+  float: left;
+  padding: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+  li {
+    display: inline-block;
+    padding: $navbar-padding;
+    &:hover {
+      background: $navbar-menu-color;
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+.navbar-right {
+  float: right;
+}

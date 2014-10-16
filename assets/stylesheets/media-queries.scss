@@ -1,0 +1,25 @@
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+@media (max-width: $screen-sm-min) {
+  @for $i from 1 through $grid-cols {
+    .col-sm-#{$i} {
+      color: #000;
+      padding: 0 $gutter-width;
+      width: percentage($i / $grid-cols);
+      float: left;
+    }
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  @for $i from 1 through $grid-cols {
+    .col-md-#{$i} {
+      color: #000;
+      padding: 0 $gutter-width;
+      width: percentage($i / $grid-cols);
+      float: left;
+    }
+  }
+}

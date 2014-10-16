@@ -1,0 +1,23 @@
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  @include clearfix();
+}
+
+.row {
+  margin: 0;
+  @include clearfix();
+}
+
+$grid-cols: 12;
+$gutter-width: 1.5%;
+
+@for $i from 1 through $grid-cols {
+  .col-lg-#{$i} {
+    color: #000;
+    padding: 0 $gutter-width;
+    width: percentage($i / $grid-cols);
+    float: left;
+  }
+}
